@@ -1,5 +1,10 @@
-# dotfiles
-Install.sh found here:
-https://www.huuhka.net/personalizing-your-github-codespaces/
+# Dotfiles
 
-Still need to configure .vscode and save a .vscode/settings.json and extensions.json there from personal computer.
+All the dotfiles needed to make the world a better place.
+
+## Installation
+
+```shell
+git clone https://github.com/mraarone/dotfiles.git
+./install.sh
+```

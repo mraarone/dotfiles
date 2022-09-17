@@ -1,0 +1,16 @@
+[include]
+	path = ~/.gitconfig.local
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
+[color]
+	ui = true
+[diff]
+	compactionHeuristic = true
+	noprefix = true
+[pull]
+	ff = only
+[init]
+  defaultBranch = main
+[user]
+  name = Ben Selby
