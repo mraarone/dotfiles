@@ -2,4 +2,6 @@
 
 set -e
 
+curl -sS https://starship.rs/install.sh | sh -s -- -y 
+
 ln -sf "${DOTFILES_LOCATION}/starship/starship.toml" "${HOME}/.config/starship.toml"
