@@ -2,8 +2,20 @@
 
 set -e
 
-ln -sf "${DOTFILES_LOCATION}/vscode/settings.json" "$HOME/.config/Code/User/settings.json"
-ln -sf "${DOTFILES_LOCATION}/vscode/keybindings.json" "$HOME/.config/Code/User/keybindings.json"
+# Check if using GitHub Codespaces
+if [ ! -f ${HOME}/.vscode-remote/data/Machine/settings.json ]; then
+  ln -sf "${DOTFILES_LOCATION}/vscode/settings.json" "${HOME}/.vscode-remote/data/Machine/settings.json"
+  ln -sf "${DOTFILES_LOCATION}/vscode/keybindings.json" "${HOME}/.vscode-remote/data/Machine/keybindings.json"
+# Check if using a PC
+elif [ ! -f ${HOME}/.config/Code/User/settings.json ]; then
+  ln -sf "${DOTFILES_LOCATION}/vscode/settings.json" "${HOME}/.config/Code/User/settings.json"
+  ln -sf "${DOTFILES_LOCATION}/vscode/keybindings.json" "${HOME}/.config/Code/User/keybindings.json"
+# Check if using a Mac
+elif [ ! -f ${HOME}/Library/Application Support/Code/User/settings.json ]; then
+  ln -sf "${DOTFILES_LOCATION}/vscode/settings.json" "${HOME}/Library/Application Support/Code/User/settings.json"
+  ln -sf "${DOTFILES_LOCATION}/vscode/keybindings.json" "${HOME}/Library/Application Support/Code/User/keybindings.json"
+fi
+
 
 CODE_EXTENSIONS=(
   DavidAnson.vscode-markdownlint
