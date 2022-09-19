@@ -10,14 +10,13 @@ fi
 
 # Path to your oh-my-zsh installation.
 ZSH_DISABLE_COMPFIX=true
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="${HOME}/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-#"agnoster"
 POWERLEVEL0K_MODE="FuraMono Nerd Font"
 
 # Set list of themes to pick from when loading at random
@@ -114,18 +113,18 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ${HOME}/.p10k.zsh ]] || source ${HOME}/.p10k.zsh
 
 # Set up the default Python poetry virtual environments path.
 export POETRY_VIRTUALENVS_PATH=/opt/poetry
 
 # Make sure user specific python module installations are supported by the path.
-export PATH=/home/aaron/.local/bin:$PATH
+export PATH=${HOME}/.local/bin:$PATH
 
 alias python="python3"
 
-# Make the windows 0777 files highlighting readable - needs to be after zshrc line
-# remove ls and directory completion highlight color" >> ~/.zshrc
-_ls_colors=':ow=01;33'
-zstyle ":completion:*:default" list-colors "${(s.:.)_ls_colors}"
-LS_COLORS+=$_ls_colors
+# Change the colors to desired ansi-dark color scheme, works with
+# solarized light or dark, and default light or dark.
+if [ -f ${HOME}/.dir_colors/dircolors.ansi-dark ]; then
+  eval $(/usr/bin/dircolors ${HOME}/.dir_colors/dircolors.ansi-dark)
+fi
