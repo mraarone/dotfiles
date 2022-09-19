@@ -123,3 +123,9 @@ export POETRY_VIRTUALENVS_PATH=/opt/poetry
 export PATH=/home/aaron/.local/bin:$PATH
 
 alias python="python3"
+
+# Make the windows 0777 files highlighting readable - needs to be after zshrc line
+# remove ls and directory completion highlight color" >> ~/.zshrc
+_ls_colors=':ow=01;33'
+zstyle ":completion:*:default" list-colors "${(s.:.)_ls_colors}"
+LS_COLORS+=$_ls_colors
