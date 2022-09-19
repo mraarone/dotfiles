@@ -123,8 +123,9 @@ export PATH=${HOME}/.local/bin:$PATH
 
 alias python="python3"
 
-## Change the colors to desired ansi-dark color scheme, works with
-## solarized light or dark, and default light or dark.
-# if [ -f ${HOME}/.dir_colors/dircolors.ansi-dark ]; then
-#   eval $(/usr/bin/dircolors ${HOME}/.dir_colors/dircolors.ansi-dark)
-# fi
+# Change the colors to desired ansi-dark color scheme, works with
+# solarized light or dark, and default light or dark.
+if [ -f ${HOME}/.dir_colors/dircolors.ansi-dark ]; then
+  eval $(dircolors ${HOME}/.dircolors/dircolors.ansi-dark)
+  export LSCOLORS=$LS_COLORS
+fi
