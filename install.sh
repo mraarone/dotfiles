@@ -18,11 +18,11 @@ sudo dpkg-reconfigure --frontend noninteractive tzdata
 # Install dependencies
 ###
 #./bin/dotfiles install starship
-./bin/dotfiles install dircolors
 ./bin/dotfiles install omz
 ./bin/dotfiles install zsh
 ./bin/dotfiles install powerlevel10k
 ./bin/dotfiles install vscode
+./bin/dotfiles install dircolors
 #./bin/dotfiles install brew
 #./bin/dotfiles install git
 #./bin/dotfiles install github
