@@ -21,21 +21,24 @@ fi
 
 
 CODE_EXTENSIONS=(
-  DavidAnson.vscode-markdownlint
-  dbaeumer.vscode-eslint
-  eamodio.gitlens
-  esbenp.prettier-vscode
-  # felixfbecker.php-intellisense
-  github.remotehub
-  github.vscode-pull-request-github
-  golang.go
-  hashicorp.terraform
-  ms-azuretools.vscode-docker
-  ms-vscode-remote.remote-containers
-  ms-python.python
-  sdras.night-owl
-  streetsidesoftware.code-spell-checker
-  # timonwong.shellcheck
-  Tyriar.sort-lines
+  "bierner.markdown-mermaid"
+  "DavidAnson.vscode-markdownlint"
+  "eamodio.gitlens"
+  "GitHub.copilot"
+  "GitHub.remotehub"
+  "hashicorp.terraform"
+  "mintlify.document"
+  "GitHub.vscode-pull-request-github"
+  "ms-vscode.makefile-tools"
+  "ms-python.python"
+  "ms-python.vscode-pylance"
+  "mechatroner.rainbow-csv"
+  "ms-vscode-remote.remote-containers"
+  "ms-python.python"
+  "oderwat.indent-rainbow"
+  "redhat.vscode-yaml"
+  "streetsidesoftware.code-spell-checker"
+  "SonarSource.sonarlint-vscode"
+  "Tyriar.sort-lines"
 )
 for ext in "${CODE_EXTENSIONS[@]}"; do printf "installing %s\n" "${ext}" && code --install-extension "${ext}" --force; done

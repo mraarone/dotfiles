@@ -22,8 +22,8 @@ sudo dpkg-reconfigure --frontend noninteractive tzdata
 ./bin/dotfiles install omz
 ./bin/dotfiles install zsh
 ./bin/dotfiles install powerlevel10k
+./bin/dotfiles install vscode
 #./bin/dotfiles install brew
-#./bin/dotfiles install vscode
 #./bin/dotfiles install git
 #./bin/dotfiles install github
 #./bin/dotfiles install node
