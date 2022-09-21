@@ -129,3 +129,5 @@ if [ -f ${HOME}/.dir_colors/dircolors.ansi-dark ]; then
   eval $(dircolors ${HOME}/.dircolors/dircolors.ansi-dark)
   export LSCOLORS=$LS_COLORS
 fi
+
+alias ls='ls --color=auto'
