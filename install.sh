@@ -31,6 +31,7 @@ zshrc
 ./bin/dotfiles install powerlevel10k
 ./bin/dotfiles install vscode
 ./bin/dotfiles install dircolors
+./bin/dotfiles install fluxbox
 #./bin/dotfiles install brew
 #./bin/dotfiles install git
 #./bin/dotfiles install github
