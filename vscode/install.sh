@@ -33,7 +33,6 @@ CODE_EXTENSIONS=(
   "ms-python.python"
   "ms-python.vscode-pylance"
   "mechatroner.rainbow-csv"
-  "ms-vscode-remote.remote-containers"
   "ms-python.python"
   "oderwat.indent-rainbow"
   "redhat.vscode-yaml"
