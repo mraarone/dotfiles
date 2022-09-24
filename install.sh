@@ -11,8 +11,8 @@ export DOTFILES_LOCATION;
 ###
 # Change time zone
 ###
-ln -fs /usr/share/zoneinfo/America/Chicago /etc/localtime
-/usr/sbin/dpkg-reconfigure --frontend noninteractive tzdata
+sudo ln -fs /usr/share/zoneinfo/America/Chicago /etc/localtime
+sudo /usr/sbin/dpkg-reconfigure --frontend noninteractive tzdata
 
 ###
 # Install dependencies
