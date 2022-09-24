@@ -5,7 +5,11 @@ set -e
 ###
 # Installation of packages, configurations, and dotfiles.
 ###
-DOTFILES_LOCATION=$(pwd)
+if [ $CODESPACES -eq true ]; then \
+    DOTFILES_LOCATION=/workspaces/.codespaces/.persistedshare/dotfiles/
+else DOTFILES_LOCATION=$(pwd)
+fi
+
 export DOTFILES_LOCATION;
 
 ###
