@@ -33,9 +33,9 @@ omz_plugins() {
 }
 
 #./bin/dotfiles install starship
-./bin/dotfiles install omz
-#omz_plugins
 ./bin/dotfiles install zsh
+./bin/dotfiles install omz
+omz_plugins
 ./bin/dotfiles install powerlevel10k
 ./bin/dotfiles install vscode
 ./bin/dotfiles install dircolors
