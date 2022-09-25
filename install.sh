@@ -34,16 +34,16 @@ omz_plugins() {
 
 #./bin/dotfiles install starship
 ./bin/dotfiles install omz
-omz_plugins
+#omz_plugins
 ./bin/dotfiles install zsh
 ./bin/dotfiles install powerlevel10k
 ./bin/dotfiles install vscode
 ./bin/dotfiles install dircolors
-#./bin/dotfiles install fluxbox
-#./bin/dotfiles install brew
-#./bin/dotfiles install git
-#./bin/dotfiles install github
-#./bin/dotfiles install node
-#./bin/dotfiles install mongodb
-#./bin/dotfiles install tmux
+##./bin/dotfiles install fluxbox
+##./bin/dotfiles install brew
+##./bin/dotfiles install git
+##./bin/dotfiles install github
+##./bin/dotfiles install node
+##./bin/dotfiles install mongodb
+##./bin/dotfiles install tmux
 #./bin/dotfiles install vim
