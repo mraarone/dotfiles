@@ -1,11 +1,11 @@
-#!/usr/bin/env zsh
+#!/bin/sh
 
 set -e
 
 ###
 # Installation of packages, configurations, and dotfiles.
 ###
-if [ $CODESPACES -eq true ]; then \
+if [ $CODESPACES ]; then \
     DOTFILES_LOCATION=/workspaces/.codespaces/.persistedshare/dotfiles/
 else DOTFILES_LOCATION=$(pwd)
 fi
