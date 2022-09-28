@@ -1,6 +1,14 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
   {
+    "key": "ctrl+shift++",
+    "command": "workbench.action.increaseViewSize"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "workbench.action.decreaseViewSize"
+  },
+  {
     "key": "ctrl+shift+]",
     "command": "workbench.action.terminal.focusNext"
   },
