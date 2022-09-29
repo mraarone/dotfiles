@@ -137,4 +137,4 @@ alias ls='ls --color=auto'
 
 # Fixese the issues since VSCode 1.70: https://stackoverflow.com/a/73333835
 # also set "terminal.integrated.shellIntegration.enabled": false, in VSCode settings.json
-[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(/usr/local/bin/code --locate-shell-integration-path zsh)"
