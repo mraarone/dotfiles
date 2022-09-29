@@ -40,4 +40,4 @@ CODE_EXTENSIONS=(
   "SonarSource.sonarlint-vscode"
   "Tyriar.sort-lines"
 )
-for ext in "${CODE_EXTENSIONS[@]}"; do printf "installing %s\n" "${ext}" && /usr/bin/code --install-extension "${ext}" --force; done
+for ext in "${CODE_EXTENSIONS[@]}"; do printf "installing %s\n" "${ext}" && /usr/local/bin/code --install-extension "${ext}" --force; done
