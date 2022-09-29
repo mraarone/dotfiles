@@ -1,8 +1,8 @@
 [begin] (  Application Menu  )
     [exec] (File Manager) { nautilus ~ } <>
     [exec] (Text Editor) { mousepad } <>
-    [exec] (VS Code) { /usr/bin/code } <>
-    [exec] (VS Code Insiders) { /usr/bin/code-insiders } <>
+    [exec] (VS Code) { /usr/share/code/bin/code } <>
+    [exec] (VS Code Insiders) { /usr/share/code-insiders/bin/code-insiders } <>
     [exec] (Terminal) { tilix -w ~ -e /bin/bash -il } <>
     [exec] (Web Browser) { x-www-browser --disable-dev-shm-usage } <>
     [submenu] (System) {}

@@ -13,7 +13,7 @@ elif [ -f ${HOME}/.config/Code/User/settings.json ]; then
   ln -sf "${DOTFILES_LOCATION}/vscode/settings.json" "${HOME}/.config/Code/User/settings.json"
   ln -sf "${DOTFILES_LOCATION}/vscode/keybindings.json" "${HOME}/.config/Code/User/keybindings.json"
 # Check if using a Mac
-elif [ -f ${HOME}/Library/Application Support/Code/User/settings.json ]; then
+elif [ -f ${HOME}/Library/Application\ Support/Code/User/settings.json ]; then
   mkdir --parents "${HOME}/Library/Application Support/Code/User"
   ln -sf "${DOTFILES_LOCATION}/vscode/settings.json" "${HOME}/Library/Application Support/Code/User/settings.json"
   ln -sf "${DOTFILES_LOCATION}/vscode/keybindings.json" "${HOME}/Library/Application Support/Code/User/keybindings.json"
@@ -40,4 +40,4 @@ CODE_EXTENSIONS=(
   "SonarSource.sonarlint-vscode"
   "Tyriar.sort-lines"
 )
-for ext in "${CODE_EXTENSIONS[@]}"; do printf "installing %s\n" "${ext}" && code --install-extension "${ext}" --force; done
+for ext in "${CODE_EXTENSIONS[@]}"; do printf "installing %s\n" "${ext}" && /usr/bin/code --install-extension "${ext}" --force; done
