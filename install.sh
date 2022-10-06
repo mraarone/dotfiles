@@ -20,8 +20,8 @@ else
     DOTFILES_LOCATION=${HOME}/dotfiles/;
 fi
 
-export DOTFILES_LOCATION;
-cd DOTFILES_LOCATION;
+export DOTFILES_LOCATION=$DOTFILES_LOCATION;
+cd $DOTFILES_LOCATION;
 
 ###
 # Change time zone
