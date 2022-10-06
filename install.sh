@@ -2,7 +2,7 @@
 
 set -e
 
-@echo Running dotfiles install.sh, logging to /tmp/dotfilesLog.txt
+echo Running dotfiles install.sh, logging to /tmp/dotfilesLog.txt
 
 exec 3>&1 4>&2
 trap 'exec 2>&4 1>&3' 0 1 2 3
@@ -13,11 +13,15 @@ exec 1>/tmp/dotfilesLog.txt 2>&1
 # Installation of packages, configurations, and dotfiles.
 ###
 if [ $CODESPACES ]; then \
-    DOTFILES_LOCATION=/workspaces/.codespaces/.persistedshare/dotfiles/
-else DOTFILES_LOCATION=${HOME}/dotfiles/
+    echo "Dealing with Codespaces, using codespaces dotfiles location...";
+    DOTFILES_LOCATION=/workspaces/.codespaces/.persistedshare/dotfiles/;
+else
+    echo "Dealing with a non-Codespaces environment, like vscode...";
+    DOTFILES_LOCATION=${HOME}/dotfiles/;
 fi
 
 export DOTFILES_LOCATION;
+cd DOTFILES_LOCATION;
 
 ###
 # Change time zone
