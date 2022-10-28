@@ -2,6 +2,9 @@
 
 set -e
 
+# Usually, this is: /usr/local/bin/code, but on a host Windows PC with WSL, it never is. Just find it.
+CODE_LOCATION=$(which code)
+
 # Check if using GitHub Codespaces
 if [ -f ${HOME}/.vscode-remote/data/Machine/settings.json ]; then
   mkdir --parents "${HOME}/.vscode-remote/data/Machine/"
@@ -40,4 +43,4 @@ CODE_EXTENSIONS=(
   "SonarSource.sonarlint-vscode"
   "Tyriar.sort-lines"
 )
-for ext in "${CODE_EXTENSIONS[@]}"; do printf "installing %s\n" "${ext}" && /usr/local/bin/code --install-extension "${ext}" --force; done
+for ext in "${CODE_EXTENSIONS[@]}"; do printf "installing %s\n" "${ext}" && ${CODE_LOCATION} --install-extension "${ext}" --force; done
