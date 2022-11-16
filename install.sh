@@ -1,4 +1,4 @@
-#!/bin/sh
+4#!/bin/sh
 
 set -e
 
@@ -29,18 +29,18 @@ cd $DOTFILES_LOCATION;
 sudo ln -fs /usr/share/zoneinfo/America/Chicago /etc/localtime
 sudo /usr/sbin/dpkg-reconfigure --frontend noninteractive tzdata
 
-#./bin/dotfiles install starship
-${DOTFILES_LOCATION}/bin/dotfiles install zsh
-${DOTFILES_LOCATION}/bin/dotfiles install omz
-${DOTFILES_LOCATION}/bin/dotfiles install powerlevel10k
-${DOTFILES_LOCATION}/bin/dotfiles install zsh_reload
-${DOTFILES_LOCATION}/bin/dotfiles install vscode
-${DOTFILES_LOCATION}/bin/dotfiles install dircolors
-${DOTFILES_LOCATION}/bin/dotfiles install fluxbox
-#./bin/dotfiles install brew
-#./bin/dotfiles install git
-${DOTFILES_LOCATION}/bin/dotfiles install github
-##./bin/dotfiles install node
-##./bin/dotfiles install mongodb
-{$DOTFILES_LOCATION}/bin/dotfiles install tmux
-#./bin/dotfiles install vim
+#${DOTFILES_LOCATION}/bin/dotfiles install starship
+${DOTFILES_LOCATION}/bin/dotfiles install_silent zsh
+${DOTFILES_LOCATION}/bin/dotfiles install_silent omz
+${DOTFILES_LOCATION}/bin/dotfiles install_silent powerlevel10k
+${DOTFILES_LOCATION}/bin/dotfiles install_silent zsh_reload
+#${DOTFILES_LOCATION}/bin/dotfiles install_silent vscode
+#${DOTFILES_LOCATION}/bin/dotfiles install_silent dircolors
+${DOTFILES_LOCATION}/bin/dotfiles install_silent fluxbox
+#${DOTFILES_LOCATION}/bin/dotfiles install_silent brew
+#${DOTFILES_LOCATION}/bin/dotfiles install_silent git
+#${DOTFILES_LOCATION}/bin/dotfiles install_silent tmux
+#${DOTFILES_LOCATION}/bin/dotfiles install_silent vim
+#${DOTFILES_LOCATION}/bin/dotfiles install_silent node
+#${DOTFILES_LOCATION}/bin/dotfiles install_silent mongodb
+#${DOTFILES_LOCATION}/bin/dotfiles install github

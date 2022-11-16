@@ -26,4 +26,5 @@ gh extension install dlvhdr/gh-dash || true
 gh extension upgrade --all
 
 # Config
+mkdir --parents "${HOME}/.config/gh-dash"
 ln -sf "${DOTFILES_LOCATION}/github/gh-dash.yml" "${HOME}/.config/gh-dash/config.yml"
