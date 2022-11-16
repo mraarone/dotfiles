@@ -138,3 +138,7 @@ alias ls='ls --color=auto'
 # Fixese the issues since VSCode 1.70: https://stackoverflow.com/a/73333835
 # also set "terminal.integrated.shellIntegration.enabled": false, in VSCode settings.json
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(/usr/bin/code --locate-shell-integration-path zsh)"
+
+# Use GPG for code signing, git is configured using:
+# https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key
+export GPG_TTY=$(tty)
