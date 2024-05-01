@@ -3,5 +3,5 @@
 set -e
 
 ln -sf "${DOTFILES_LOCATION}/zsh/.zshrc" "${HOME}/.zshrc"
-source "${HOME}/.zshrc"
+
 
