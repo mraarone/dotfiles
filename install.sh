@@ -33,7 +33,7 @@ sudo /usr/sbin/dpkg-reconfigure --frontend noninteractive tzdata
 ${DOTFILES_LOCATION}/bin/dotfiles install_silent zsh
 ${DOTFILES_LOCATION}/bin/dotfiles install_silent omz
 ${DOTFILES_LOCATION}/bin/dotfiles install_silent powerlevel10k
-${DOTFILES_LOCATION}/bin/dotfiles install_silent zsh_reload
+#${DOTFILES_LOCATION}/bin/dotfiles install_silent zsh_reload
 #${DOTFILES_LOCATION}/bin/dotfiles install_silent vscode
 #${DOTFILES_LOCATION}/bin/dotfiles install_silent dircolors
 ${DOTFILES_LOCATION}/bin/dotfiles install_silent fluxbox
