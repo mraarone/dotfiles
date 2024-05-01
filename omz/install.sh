@@ -17,6 +17,7 @@ omz_install () {
       printf "oh-my-zsh is already installed\n"
     else
       sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+      export ZSH=${HOME}/.oh-my-zsh
     fi
 }
 
